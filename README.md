@@ -1,8 +1,12 @@
-# My clang-format
+# NJ Common
 
-My clang-format preferences.
+A repository for storing common scripts and configuration preferences.
 
-How to use: Clone this repo and symlink to the .clang-format file. E.g.:
+## Usage
 
-`ln -s ~/git/my-clang-format/.clang-format ~/git/cool-project`
+Clone this repo:
 
+`git clone https://github.com/nogjam/nj-common.git`
+
+Then pick and choose which configs you want to install on your system by editing the `install.sh` script.
+Alternatively, you may want to directly run the commands in the install script.
