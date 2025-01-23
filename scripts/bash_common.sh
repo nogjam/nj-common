@@ -75,7 +75,7 @@ retrieve_and_compare() {
     local lines_changed
     local file_name
 
-    wget "$uri" --directory-prefix /tmp --backups=1
+    wget "$uri" --directory-prefix /tmp --backups=1 --quiet
     file_name=$(echo "$uri" | rev | cut -d "/" -f 1 | rev)
     lines_changed=$(diff "$local_path" /tmp/"${file_name}" | wc -l)
     if [ $lines_changed -gt 0 ]; then
