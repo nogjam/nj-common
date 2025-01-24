@@ -1,0 +1,24 @@
+// Put this in: ~/.config/Code/User/snippets (Linux)
+//              %APPDATA%\Code\User\snippets (Windows)
+{
+	"ACME Copyright Header": {
+		"prefix": ["copy"],
+		"body": [
+			"$LINE_COMMENT Copyright © $CURRENT_YEAR ACME Corp.",
+			"$LINE_COMMENT ACME Confidential\n$0"
+		],
+		"isFileTemplate": true,
+		"description": "ACME Copyright Header (line comments)"
+	},
+	"ACME Copyright Header (Blocks)": {
+		"scope": "html, xml, xaml",
+		"prefix": ["copy"],
+		"body": [
+			"$BLOCK_COMMENT_START Copyright © $CURRENT_YEAR ACME Corp. $BLOCK_COMMENT_END",
+			"$BLOCK_COMMENT_START ACME Confidential $BLOCK_COMMENT_END",
+			"$0"
+		],
+		"isFileTemplate": true,
+		"description": "ACME Copyright Header (block comments)"
+	}
+}
