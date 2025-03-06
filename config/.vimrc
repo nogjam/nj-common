@@ -71,6 +71,10 @@ set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
 set number
 set undofile
 set undodir=$HOME/.vim/vimundo
+" The famous Vim vertical ruler
+set colorcolumn=80,88,100,120
+" Spell checking
+set spell
 
 " Use four spaces instead of tabs
 filetype plugin indent on
