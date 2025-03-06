@@ -79,7 +79,7 @@ retrieve_and_compare() {
     file_name=$(echo "$uri" | rev | cut -d "/" -f 1 | rev)
     lines_changed=$(diff "$local_path" /tmp/"${file_name}" | wc -l)
     if [ $lines_changed -gt 0 ]; then
-        warn "WARNING: Change found: $1 vs. $local_path"
+        warn "WARNING: Change found: $1 vs. $local_path\nConsider updating the version in this repo to match the new one"
     fi
 }
 
