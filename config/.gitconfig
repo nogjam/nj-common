@@ -1,0 +1,14 @@
+[core]
+    editor = vi
+    pager = "less -F"
+[diff]
+    tool = vscode
+[difftool "vscode"]
+    cmd = code --wait --diff --new-window \"$LOCAL\" \"$REMOTE\"
+[init]
+    defaultBranch = main
+[push]
+    autoSetupRemote = true
+[user]
+    name = nogjam
+    email = nathaniel-j-jones@proton.me

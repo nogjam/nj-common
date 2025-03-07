@@ -21,6 +21,7 @@ retrieve_and_compare "https://raw.githubusercontent.com/habamax/vim-habamax/refs
 echo "Creating symlinks..."
 # Files
 ln -s "$repo_root"/config/.clang-format ~/.clang-format
+ln -s "$repo_root"/config/.gitconfig ~/.gitconfig
 ln -s "$repo_root"/config/.vimrc ~/.vimrc
 # Directories
 ln -s "$repo_root"/config/.vim ~
