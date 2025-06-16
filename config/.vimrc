@@ -72,7 +72,7 @@ set number
 set undofile
 set undodir=$HOME/.vim/vimundo
 " The famous Vim vertical ruler
-set colorcolumn=80,88,100,120
+set colorcolumn=73,80,88,100,120
 " Spell checking
 set spell
 
