@@ -115,3 +115,6 @@ teardown
 configs
 srv
 src
+docstring
+PostgreSQL
+SQLite
